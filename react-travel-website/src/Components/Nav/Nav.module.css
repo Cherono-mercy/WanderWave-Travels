@@ -1,0 +1,100 @@
+.Nav_wrapper {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15%;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.Nav_wrapper .logo a {
+    font-size: 28px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.Nav_wrapper ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.Nav_wrapper ul li a {
+    color: var(--primary-color);
+}
+
+.Nav_wrapper ul li:hover a {
+    color: var(--secondary-color);
+}
+
+.nav_btns {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#bars {
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    color: #fff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+
+    transition: .6s;
+
+    display: none;
+}
+
+#bars:active {
+    transform: scale(0.9);
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width:1200px) {
+    #bars {
+        display: flex;
+    }
+
+.Nav_wrapper ul {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    left: -100%;
+    transition: .6s;
+    
+}
+
+.Nav_wrapper ul li{
+    display: block;
+    padding: 25px 0;
+    padding-left: 15%;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.1);
+}
+
+.Nav_wrapper .showNav {
+    left: 0%;
+}
+
+.Nav_wrapper ul li a {
+    color: var(--secondary-color);
+}
+}
+
+@media screen and (max-width:500px) {
+    .nav_btns button {
+        display: none;
+    }
+}
