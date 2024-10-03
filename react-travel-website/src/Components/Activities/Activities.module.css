@@ -1,0 +1,133 @@
+.activities_wrapper {
+    flex-direction: row !important;
+}
+
+.activity_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 40%;
+}
+
+.activity_content h2 {
+    font-size: 45px;
+    color: var(--primary-color);
+}
+
+.activity_content p {
+    width: 80%;
+    color: rgba(131, 131, 131, 1);
+    font-weight: 300;
+}
+.activity_content a {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.activity_container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.activity_container .activity_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+
+}
+
+.activity_container .activity_item i {
+    height: 80px;
+    width: 80px;
+    background-color: #f9ac79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    transition: .6s;
+
+    
+}
+
+.activity_container .activity_item:nth-of-type(2) i {
+    background-color: #79d0f9;
+
+}
+.activity_container .activity_item:nth-of-type(3) i {
+    background-color: #f97979;
+
+}
+.activity_container .activity_item:nth-of-type(4) i {
+    background-color: #f9ee79;
+    color: var(--primary-color);
+
+}
+
+.activity_container .activity_item:nth-of-type(5) i {
+    background-color: #c679f9;
+
+}
+.activity_container .activity_item:nth-of-type(6) i {
+    background-color: #9079f9;
+    color: var(--primary-color);
+
+}
+
+.activity_container .activity_item:nth-of-type(7) i {
+    background-color: #f979b3;
+
+}
+
+.activity_container .activity_item:nth-of-type(8) i {
+    background-color: #f97bf9;
+
+}
+
+
+.activity_container .activity_item:hover i {
+    border-radius: 50%;
+}
+
+.activity_container .activity_item h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.activity_container .activity_item p {
+    font-size: 14px;
+    color: rgba(131, 131, 131, 1);
+}
+
+@media screen and (max-width:900px){
+    .activities_wrapper {
+        flex-direction: column !important;
+    }
+
+    .activity_content .activity_container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .activity_container {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:500px) {
+    .activity_container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
