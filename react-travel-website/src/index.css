@@ -1,0 +1,65 @@
+/*GOOGLE Fonts Link*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@10');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+
+    font-family: 'Outfit';
+}
+
+:root {
+    --primary-color: rgb(0,34,72);
+    --secondary-color:rgb(68,215,182);
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    cursor: pointer;
+
+    transition: .6s;
+}
+
+button i {
+    margin-top: 3px;
+}
+
+button:hover {
+    transform: scale(0.95);
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.section {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     padding: 80px 15%;
+     width: 100%;
+}
+
+.section_title {
+    color: var(--secondary-color);
+    font-family: 'Sacramento' !important;
+    font-size: 38px;
+    font-weight: 500;
+}
